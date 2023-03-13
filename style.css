@@ -1,0 +1,21 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    flex:1 0 600px;
+    max-width: 90%;
+
+}
+#question-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    flex: 1;
+    max-width: 250px;
+}
