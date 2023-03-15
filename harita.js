@@ -11,13 +11,19 @@ for(let i=0;i<alanlar.length;i++)
 */
 
 //forEach kullanabilmek için elde edilen NodeList spread syntax yordamıyla bir diziye yayıldı.
-const alanlar = document.getElementsByTagName("area");
+const areas = document.getElementsByTagName("area");
 
-[...alanlar].forEach(alan => {
-  alan.addEventListener("click", soruyuGoster);
+[...areas].forEach((area, index) => {
+  area.addEventListener("click", () => {
+    const title = area.getAttribute("title");
+    soruyuGoster(title);
+  });
 });
 
-function soruyuGoster(){
-    alert("Al sana soru???");
+function soruyuGoster(title){
+  alert("Al sana soru " + title + "!!!");
 }
+
+
+
 
