@@ -1,4 +1,4 @@
-// Define an object that contains questions and answers for each state
+// Sorular,seçenekler ve cevapları içeren bölge nesneleri tanımlama
 const stateQuestions = {
     Marmara: {
       question: "Marmara bölgesinin en kalabalık şehri?",
@@ -29,9 +29,10 @@ const stateQuestions = {
   };
   
   //let currentQuestion = null;
+  //Soru,dogruCevap,kullaniciCevap ve seçenekler için değişkenleri tanımlama
   let dogruCevap;
   
-  // Function that displays a random question and its choices for the selected state
+  // soruyu ve seçenekleri gösteren fonksiyonu tanımlama
   function showQuestion(state) {
 
     document.getElementById("question-container").style.display = "block";
@@ -67,11 +68,13 @@ const stateQuestions = {
       li.appendChild(document.createTextNode(choice));
       document.getElementById("choices").appendChild(li);
     });
+      
+
   
 
   }
   
-  // Function that checks if the user's answer is correct
+  // Cevabı kontrol etme fonksiyonunu tanımlama
   function checkAnswer() {
     
     const userAnswer = document.querySelector('input[name="choice"]:checked').value;

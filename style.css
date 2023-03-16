@@ -15,6 +15,11 @@ img{
     flex-direction: column;
     gap: 10px;
 }
+#soruKutusu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 button{
     flex: 1;
     max-width: 250px;
