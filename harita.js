@@ -67,28 +67,5 @@ alanlar=document.getElementsByTagName("area");
 
 
 
-/*
-let i;
-for(i=0;i<alanlar.length;i++)
-{
-    alanlar[i].addEventListener("click",soruyuGoster);
-} 
-*/
-
-//forEach kullanabilmek için elde edilen NodeList spread syntax yordamıyla bir diziye yayıldı.
-
-
-
-
-
-
-
-
-// 5.adım:Cevabı kontrol etme fonksiyonunu tanımlama
-
-
-
-
-
 
 

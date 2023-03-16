@@ -32,13 +32,13 @@ const stateQuestions = {
   //Soru,dogruCevap,kullaniciCevap ve seçenekler için değişkenleri tanımlama
   let dogruCevap;
   
-  // soruyu ve seçenekleri gösteren fonksiyonu tanımlama
+  // Function that displays a random question and its choices for the selected state
   function showQuestion(state) {
 
     document.getElementById("question-container").style.display = "block";
 
     // Get a random question from the stateQuestions object
-    const questions = stateQuestions[state];
+    const questions = stateQuestions[bolge];
     //const questionKeys = Object.keys(questions);
     //const randomQuestionKey =questionKeys[Math.floor(Math.random() * questionKeys.length)];
     const randomQuestion = questions['question'];
