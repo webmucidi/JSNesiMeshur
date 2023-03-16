@@ -2,17 +2,17 @@
 const bolgeler={
     Marmara: {
       soru: "Nüfus yoğunluğu en fazla olan il?",
-      secenekler: "Bursa,Edirne,İstanbul,Kocaeli",
+      secenekler: ["Bursa","Edirne","İstanbul","Kocaeli"],
       cevap: "İstanbul"
     },
     Karadeniz: {
       soru: "En meşhur yemeği?",
-      secenekler: "Hamsi,Kebap,Lahmacun,Künefe",
+      secenekler: ["Hamsi","Kebap","Lahmacun","Künefe"],
       cevap: "Hamsi"
     },
     Ege: {
       soru: "Gelir kaynağı?",
-      secenekler: "Sanayi,Turizm,Tarım,Hayvancılık",
+      secenekler: ["Sanayi","Turizm","Tarım","Hayvancılık"],
       cevap: "Turizm"
     }
   };
@@ -34,8 +34,6 @@ alanlar=document.getElementsByTagName("area");
   function soruyuGoster(secilenBolge){
 
       alert("Nereden düştüm ben buraya?"+secilenBolge+" den geldim gardaşşş!");
-
-      
 
       bilgiler=bolgeler[secilenBolge];
       soru=bilgiler['soru'];
