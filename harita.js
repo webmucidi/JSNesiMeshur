@@ -50,13 +50,13 @@ alanlar=document.getElementsByTagName("area");
         
         const yeniSecenek=document.createElement("li");
         const yeniRadio=document.createElement("input");
+
+        yeniSecenek.innerHTML=secenek;
         yeniRadio.type="radio";
         yeniRadio.name="yeniSecenek";
         yeniRadio.value=secenek;
-        yeniSecenek.appendChild(yeniRadio);
-        yeniSecenek.appendChild(document.createTextNode(secenek));
 
-        
+        yeniSecenek.appendChild(yeniRadio);
         document.getElementById("seceneklerListesi").appendChild(yeniSecenek);
         
       });
