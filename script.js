@@ -38,7 +38,7 @@ const stateQuestions = {
     document.getElementById("question-container").style.display = "block";
 
     // Get a random question from the stateQuestions object
-    const questions = stateQuestions[bolge];
+    const questions = stateQuestions[state];
     //const questionKeys = Object.keys(questions);
     //const randomQuestionKey =questionKeys[Math.floor(Math.random() * questionKeys.length)];
     const randomQuestion = questions['question'];
