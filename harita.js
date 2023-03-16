@@ -1,4 +1,7 @@
 // 1.adım:Sorular,seçenekler ve cevapları içeren bölge nesneleri tanımlama
+/* 
+Hatayı secenekleri ayrı bir dizi değilde tek bir maddeymiş gibi tanımlayarak yapmışız!!!
+*/
 const bolgeler={
     Marmara: {
       soru: "Nüfus yoğunluğu en fazla olan il?",
