@@ -41,6 +41,8 @@ alanlar=document.getElementsByTagName("area");
       bilgiler=bolgeler[secilenBolge];
       soru=bilgiler['soru'];
       secenekler=bilgiler['secenekler'];
+      dogruCevap=bilgiler.cevap;
+      console.log(dogruCevap);
       
       document.getElementById("seceneklerListesi").innerHTML = "";
       document.getElementById("soruBaslik").textContent = soru;
@@ -61,6 +63,20 @@ alanlar=document.getElementsByTagName("area");
         
       });
       
+  }
+
+
+  function cevabiKontrolEt(){
+    kullaniciCevap=document.querySelector('input[name="yeniSecenek"]:checked').value;
+    
+    console.log(kullaniciCevap);
+
+    if(kullaniciCevap===dogruCevap){
+      alert("Tebrikler. Doğru cevap.");
+    }
+    else{
+      alert("Yanlış cevap!!!");
+    }
   }
 
 

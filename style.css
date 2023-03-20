@@ -20,6 +20,11 @@ img{
     flex-direction: column;
     gap: 10px;
 }
+
+input[type="radio"]{
+    margin: 10px;
+}
+
 button{
     flex: 1;
     max-width: 250px;
