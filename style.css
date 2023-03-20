@@ -23,6 +23,7 @@ img{
 
 input[type="radio"]{
     margin: 10px;
+    padding: 10px;
 }
 
 button{
